@@ -299,9 +299,9 @@ a {
   gap: 0.9375rem;
 }
 
-  .icons {
-    text-shadow: 0.060rem 0.060rem  black;
-  }
+.icons {
+  text-shadow: 0.060rem 0.060rem black;
+}
 
 .icon svg {
   width: 2.5rem;
@@ -398,16 +398,16 @@ a {
 .detail-h1 {
   display: grid;
   text-align: center;
-  color: #9fc52b;
-  text-shadow: 0.0625rem 0.0625rem 0.0625rem #13470c;
+  color: #080808;
+  text-shadow: 0.040rem 0.040rem rgb(137, 133, 134);
 }
 
 .brand {
   display: flex;
   padding-left: 1rem;
   font-weight: bold;
-  color: #9fc52b;
-  text-shadow: 0.0625rem 0.0625rem 0.0625rem #13470c;
+  color: #080808;
+  text-shadow: 0.040rem 0.040rem rgb(137, 133, 134);
 }
 
 .description {
@@ -416,7 +416,6 @@ a {
   line-height: 1.8;
   text-align: justify;
   color: rgb(3, 3, 3);
-  font-weight: bold;
 }
 
 .back-link {
@@ -456,6 +455,7 @@ a {
     margin: 0;
   }
 
+  /* main page*/
   .site-header {
     display: grid;
     grid-template-columns: 15rem 1fr;
@@ -510,7 +510,7 @@ a {
     justify-content: start;
     align-items: center;
     position: relative;
-    left: -20.5rem;
+    left: -16.5rem;
     margin-top: 2rem;
 
   }
@@ -644,6 +644,174 @@ a {
     margin-top: 1rem;
   }
 
+  /*linked page Product details*/
+
+  .product-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    align-items: start;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .back-link {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+  }
+
+  .product-image {
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem;
+  }
+
+  .product-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .detail-info {
+    grid-column: 2 / 3;
+    max-width: 420px;
+    padding-top: 0;
+  }
+
+  .detail-h1 {
+    font-size: 1.8rem;
+    color: #080808;
+    text-shadow: 0.040rem 0.040rem rgb(137, 133, 134);
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    padding-right: 0.2rem;
+    font-weight: 1;
+  }
+
+  .brand {
+    color: #080808;
+    text-shadow: 0.040rem 0.040rem rgb(137, 133, 134);
+  }
+
+  .price-new {
+    font-size: 1.5rem;
+  }
+
+  .add-cart-btn {
+    margin-top: 0.1rem;
+  }
+
+  .feat {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.feat .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8rem;
+    row-gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feat .feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feat .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.feat .icon svg {
+    width: 42px;
+    height: 42px;
+}
+
+.feat .feature span:last-child {
+    max-width: 170px;
+    line-height: 1.4;
+}
+
+.related-products {
+    grid-column: 1 / -1;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.related-products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.related-wrapper {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.related-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.related-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.related-card img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.related-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.related-top h3 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.related-top span {
+    font-weight: bold;
+}
+
+.related-info p {
+    margin: 0.3rem 0 0 0;
+    color: #0e0d0d;
+}
+
+.slide-btn {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
 }
 
 /*DESKTOP 1024px*/
@@ -709,6 +877,7 @@ a {
   .main-nav {
     margin-left: -5.5rem;
     gap: 2rem;
+    left: -20.5rem;
   }
 
   .campain {
@@ -720,7 +889,7 @@ a {
   .campain .hero {
     width: 100%;
     max-width: none;
-    margin:0;
+    margin: 0;
     padding: 0.875rem;
     display: grid;
     grid-template-columns: 1fr 55rem;
@@ -738,7 +907,7 @@ a {
     justify-content: center;
     padding-top: 5rem;
   }
-  
+
   .campain .hero-image {
     width: 100%;
     height: 100%;
@@ -789,7 +958,7 @@ a {
   .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
   }
 
