@@ -449,6 +449,137 @@ a {
   border-radius: 0.3rem;
 }
 
+/* Checkout */
+
+.cart-section {
+  width: 31.25rem;
+  margin: 3.125rem auto;
+  font-family: sans-serif;
+  color: black;
+}
+
+.cart-section h1 {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border: 0.125rem solid black;
+  padding: 1.6rem;
+  margin-bottom: 0;
+  align-items: center;
+  background-color: #f3eded;
+}
+
+.left h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.left p {
+  margin: 0;
+  color: gray;
+}
+
+.right {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.client-information h2 {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.client-information {
+  padding-left: 0.8rem;
+  padding-right: 0.5rem;
+}
+
+label {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+  margin-top: 1.25rem;
+}
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.125rem solid #555;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.checkout-form {
+  width: 31.25rem;
+  margin: 2.5rem auto;
+  font-family: sans-serif;
+}
+
+.address-box {
+  border: 0.125rem solid #080808;
+  padding: 1.5rem 1.25rem 1.25rem;;
+  margin-bottom: 1.875rem;
+}
+
+.address-box legend {
+  display: inline-block;
+  width: auto;
+  max-width: max-content;
+  position: relative;
+  top: -2.70rem;
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+  background: rgb(144, 30, 111);
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.small-field input {
+  width: 13.75rem;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.625rem;
+  margin-bottom: 1.875rem;
+  font-size: 1.125rem;
+}
+.newsletter label {
+  margin: 0;
+}
+
+.newsletter input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.buy-btn {
+  display: block;
+  width: 15rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.75rem;
+  border: 0.125rem solid #555;
+  border-radius: 0.375rem;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.cart-table {
+  display: none;
+}
+
 /*TABLET 640px*/
 @media (min-width: 640px) {
   .body {
@@ -812,6 +943,119 @@ a {
     line-height: 1;
 }
 
+/*checkout*/
+.container {
+  max-width: 53rem;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+.cart-item {
+  display: none;
+}
+
+.cart-section {
+    width: 90%;
+    max-width: 53rem;
+    margin: 3rem auto;
+  }
+
+  .cart-section h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .cart-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f3eded;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    border: 0.125rem solid #777;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 1.25rem;
+  }
+
+  .cart-table th {
+    background-color: #cfcfcf;
+    font-weight: bold;
+  }
+
+    .client-information h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+  }
+
+   .client-information {
+    display: grid;
+    max-width: 53rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .info-email {
+    grid-column: 1 / -1;
+  }
+
+  .checkout-form {
+    width: 100%;
+    max-width: 53rem;
+    margin: 2rem auto;
+  }
+
+  .address-box {
+    width: 100%;
+    border: 0.125rem solid #050505;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-left: 2.4rem;
+      width: calc(100% - 4.8rem); /* bigger move */
+}
+
+
+  .address-box legend {
+    position: relative;
+    top: -2.2rem;
+    display: inline;
+    margin-left: 0;
+    padding: 0 0.25rem;
+    background: rgb(144, 30, 111);
+    font-weight: normal;
+    color: #0f0e0e;
+  }
+
+  .address-box .form-group:first-of-type input {
+    width: 100%;
+  }
+
+  .small-field {
+    max-width: 10rem;
+  }
+
+  .small-field input {
+    width: 100%;
+  }
+
+  .address-box .form-group:last-of-type {
+    max-width: 18rem;
+  }
+
+  .address-box .form-group:last-of-type input {
+    width: 100%;
+  }
+
+  .newsletter {
+    padding-left: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
 }
 
 /*DESKTOP 1024px*/
@@ -855,7 +1099,7 @@ a {
     align-items: center;
     width: 100%;
     gap: 0;
-    margin-top: 4.5rem;
+    margin-top: 2.5rem;
     padding-right: 3rem;
   }
 
